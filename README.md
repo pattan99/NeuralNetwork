@@ -10,7 +10,7 @@ Các layer tiếp theo là Dense_Layer và Activation_Layer (hiện chỉ hỗ t
 <br>
 NeuralNetwork hiện chỉ hỗ trợ hàm mất mát cross entropy.
 ## Train Model
-![Model2](https://i.ibb.co/0fxX5yv/image-2022-06-02-203417983.png)
+![Model2](https://i.ibb.co/kSMLc92/image-2022-06-09-105315701.png)
 <br>
 Trước khi train phải compile bằng cách khai báo lr, loss và seed.
 <br>
@@ -19,7 +19,12 @@ Sau đó gọi model.fit để train model, phải đặt giá trị cho epoch, 
 model.predict để predict ra nhãn dựa trên bộ test truyền vào.
 <br>
 model.evaluate để đánh giá model dựa trên nhãn dự đoán và nhãn thực.
-### Qua nhiều lần thử nghiệm với số nút của hidden layer và batch_size khác nhau, ta có được kiến trúc mạng như trên sẽ có độ chính xác cao nhất: 0.9817.
+# Kết quả thử nghiệm
+## Accuracy
+![Model3](https://i.ibb.co/Z1wp5WP/image-2022-06-09-105843366.png)
+## Loss score
+![Model4](https://i.ibb.co/NZ2whhj/image-2022-06-09-110012305.png)
+### Qua nhiều lần thử nghiệm với số nút của hidden layer và batch_size khác nhau, ta có được kiến trúc mạng như trên sẽ có độ chính xác cao nhất: 0.983.
 # Ưu và nhược điểm của neural network
 ## Ưu điểm
 - Có thể điều chỉnh các tham số hoặc tăng số hidden layer để tăng độ chính xác của mô hình.
